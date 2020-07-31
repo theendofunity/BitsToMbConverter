@@ -15,11 +15,15 @@ public:
 
 private:
     uint64_t toReverseOrder(std::vector<uint> bitNums);
-    void createMb();
+    std::vector<uint> fromReverseOrder(uint64_t mb);
+    void convertToMb();
+    void convertToBits();
+
 private:
     QLineEdit *bits = nullptr;
     QLineEdit *result = nullptr;
 
-    QPushButton *convert = nullptr;
+    QLineEdit *mb = nullptr;
+    QLineEdit *bitsFromMb = nullptr;
 };
 #endif // GUI_H
